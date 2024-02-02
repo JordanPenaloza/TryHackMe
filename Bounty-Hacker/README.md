@@ -17,6 +17,7 @@
   - looks like a bunch of passwords!
 
   - contents of task.txt
+    
 ![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/43880eb1-3742-4021-9706-f72bf449ba20)
 
   - We found the answer to questions #3! lin created the file!
