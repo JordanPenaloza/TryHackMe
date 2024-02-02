@@ -8,9 +8,11 @@
 
 2.) Looks like there is also an anonymous FTP login allowed which might be something to check out,
   - we found 2 textfiles, locks.txt and task.txt
+
 ![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/9c0f0523-3141-4fa8-b278-58d546c15aa4)
 
   - contents of locks.txt
+    
 ![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/dafd58b3-f2e7-40bb-91b3-d7688d3cab50)
   - looks like a bunch of passwords!
 
