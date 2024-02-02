@@ -25,11 +25,14 @@
   - Question 5 asks us to find the user's password
 
 3.) We can use hydra to bruteforce attack the credentials by using the locks.txt file we found earlier
+
 ![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/ac0aac9a-3f21-4ea7-9883-6004cbad6001)
 
   - Success! we found the credentials for lin's account! RedDr4gonSynd1cat3
     Now we can ssh into the account.
+    
 ![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/c4854330-2a83-455e-963b-792a7893b62a)
+
   - We're in
 
 4.) Time to escalate
