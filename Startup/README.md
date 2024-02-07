@@ -55,6 +55,23 @@ ok so my old readme got deleted so this is gonna be a little bit of a lazy readm
 
    - we can now ssh into the ip using lennie as the username and our found password
    - we found the user.txt flag!
+6.) priv escalation time
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/bfe5a164-faeb-4a66-9bb7-7edc9edea5a3)
+
+   - After checking the privelages of each file I found that planner.sh prints to another bash file called print.sh which lennie has wreite privelages too
+   - Above shows me putting a reverseshell bash script into the print.sh file
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/04adb098-f143-4f62-9fab-1bcb69d6ae49)
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/9c2dd701-f379-44e9-92c4-d1bec6da25a1)
+
+   - After opening a listener for the shell on my machine and running the shell, we got root! and the flag!
+   - God this one was frustrating
+
+
+
+
 
 
 
