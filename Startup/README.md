@@ -49,7 +49,13 @@ ok so my old readme got deleted so this is gonna be a little bit of a lazy readm
 
 ![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/65fd8229-4247-41e8-80e4-3d562d4ef524)
 
-   - Looks like lennie was trying to privelage escalate and we also found the password 
+   - Looks like lennie was trying to privelage escalate and we also found the password
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/95e6bd5c-a019-49a1-8b63-8dbd359115c4)
+
+   - we can now ssh into the ip using lennie as the username and our found password
+   - we found the user.txt flag!
+
 
 
 
