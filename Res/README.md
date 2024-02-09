@@ -32,21 +32,18 @@
   - https://book.hacktricks.xyz/pentesting/6379-pentesting-redis I found this post which showed hown vulnerable redis is to interactive shells
   - We can run the following sequence of commands to set the dbfilename to shell.php
 
-![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/49f54c05-91a6-4a72-ad8f-c435af2d5c49)
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/8bb810bf-f595-4810-b4ad-522fa6f9660a)
 
-Lets set up a netcat listener
+  - Lets set up a netcat listener
 
-![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/90a804d6-3be3-4274-8104-601fcde0874c)
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/c256ccea-053e-410b-9375-4adc839c5095)
 
-Now change test to "php system get command here" using the redis-cli
+  
 
 ![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/1d674983-0d59-48c0-a2a1-636deae5f8ed)
 
 now we can issue command injection in the web browser
 
-![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/8bb810bf-f595-4810-b4ad-522fa6f9660a)
-
-Now we have a shell on the host
 
 
 
