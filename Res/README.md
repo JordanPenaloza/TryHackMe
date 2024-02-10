@@ -38,11 +38,46 @@
 
 ![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/c256ccea-053e-410b-9375-4adc839c5095)
 
-  
 
-![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/1d674983-0d59-48c0-a2a1-636deae5f8ed)
+  - now we can issue command injection in the web browser by visiting the /redis.php directory
 
-now we can issue command injection in the web browser
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/40a81411-5987-44c0-b4c3-5635f2424bdc)
+
+4.) Let's upgrade our shell by running python3 -c 'import pty;pty.spawn("/bin/bash:)'
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/1581366e-412e-41b5-97c6-62b3664b71a9)
+
+  - We then found the user flag using the userflag we found earlier
+
+5.) Root time
+
+  - We can run find / -perm /4000 -type f 2> /dev/null to look for files that may have the SUID bit set
+    
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/e6b3b7d3-7b30-4fde-b1e0-caa491f39843)
+
+  - /xxd looks a little out of place, GTFObins tells us that we can read shadow files by running xxd /etc/shadow | xxd -r
+    
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/761ac09c-c694-447c-b073-9510bc6b8a15)
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/b3361fbe-190d-4d94-bd3f-74e8ec9a94e2)
+
+  - We can use hashcat to crack the password
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/8c1cfb23-7b97-4c4b-bf7b-98847eaccb4e)
+
+  - We got a password! Let's login
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/2e208b30-f158-4d97-a29f-95cc86d3ef11)
+
+  - We're in and I used sudo -i to switch to root
+  - we can ls for the root flag and that is all!
+
+
+
+
+
+   
+
 
 
 
