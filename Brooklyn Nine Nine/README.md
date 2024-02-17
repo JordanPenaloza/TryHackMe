@@ -65,7 +65,25 @@ attack machine IP: 10.2.109.120
   - I ran the 2nd command in the environment that popped up after running the less command and we escalated to root!
   - This CTF wasn't too bad but it was my first CTF that I completed without the assistance of a write up, I used my own learned knowledge!
 
+5.) Extra credit
 
+  - I also wanted to address the steganographic image I found earlier, we didn't need it to get root access but I want to see how we could lead to root access with the image
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/616852e7-9518-4efc-87a0-6f180ea754d5)
+
+  - I used stegseek to crack the passphrase of the steganopgraphic info and found note.txt
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/1d3a81b9-3a1f-4927-95a6-a50e1c955032)
+
+  - Looks like Holt was hiding their password in the image all along!
+  - After logging in with ssh we ran the same sudo -l command and found she could use nano as sudo
+    
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/3a4e79fc-d75c-4ab9-a7d2-40ab428df6af)
+
+  - After executing these commands we got root!
+  - This was another way to get the root flag
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/826400fa-f443-4561-a085-2531050b6d04)
 
 
 
