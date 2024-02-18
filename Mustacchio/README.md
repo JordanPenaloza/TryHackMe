@@ -59,5 +59,25 @@ Attack IP: 10.2.109.120
 
 
 
+  - ok i lost all my screenshots but I basically uploaded a XXE payload and was able to find the id_rsa hash key
+  - I used john to turn it into a hash format and cracked it with john the ripper
+  - I got into the ssh as barry and found user.txt
+  - let's privelage escalate
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/1764b0d7-7285-4307-bb94-17b5db3c4a92)
+
+  - The only interesting binary is live_log
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/493f08c8-27d5-4b0a-8b4a-5aec6a832d1d)
+
+  - Looks like it's using the tails command but not the absolute path which is exploitable
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/e692f0bf-ea3e-4284-9c5a-658dfa03d947)
+
+  - I wrote my own binary and added it to the live_log path and got root!
+
+
+
+
 
 
