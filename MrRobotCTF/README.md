@@ -51,6 +51,16 @@
 
   - now that we are robot we got the 2nd key
 
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/884f89f8-75a0-453e-8442-3d8b939730d9)
+
+  - That nmap binary looks suspicious
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/d76f1412-a644-45e2-b562-3ad64ef0691b)
+
+![image](https://github.com/JordanPenaloza/TryHackMe/assets/113396128/1e2d494c-4af3-4d62-8a7c-1e5561a35f09)
+
+  - I looked up on gtfobins and looks like we can spawn an interactive shell by using nmap
+  - root obtained!
 
 
 
