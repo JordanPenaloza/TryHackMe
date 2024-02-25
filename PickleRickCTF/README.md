@@ -1,4 +1,5 @@
 Vitctim IP: 10.10.69.111
+
 1.) Scanning
   - The first thing we always want to do when scanning through an IP is using nmap to look for open ports
 
